@@ -1,0 +1,9 @@
+{
+  "name": "Smash It.",
+  "short_name": "Smash",
+  "theme_color": "#000000",
+  "background_color": "#111111",
+  "display": "browser",
+  "scope": "/",
+  "start_url": "/index.html"
+}

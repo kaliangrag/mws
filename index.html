@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smash It: Weather App</title>
+
+    <link rel="shortcut icon" href="./assets/images/logo/logo-circle.png" type="image/x-icon">
+
+    <!-- Adding NewCSS Files -->
+    <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="./assets/styles.css">
+
+</head>
+
+<body>
+
+    <!-- Starting Header -->
+    <header>
+        <h1>Smash It.</h1>
+        <nav>
+            <a href="https://busayo.netlify.app">Busayo</a> /
+            <a href="https://newcss.net">NewCSS</a> /
+            <a href="https://unsplash.com/developers">Unsplash</a> /
+            <a href="https://openweathermap.org/">OpenWeather</a>
+        </nav>
+    </header>
+    <!-- Ending Header -->
+
+    <div id="container">
+        <h1>Enter The Location</h1>
+        <br>
+        <!-- Input for the user to enter location -->
+        <input placeholder="City" id="search">
+        <br>
+        <!-- Selecting units for the temperature(deg. F/C) -->
+        <select id="units">
+            <option value="">Kelvin</option>
+            <option value="imperial">Farhrenheit</option>
+            <option value="metric">Celcius</option>
+        </select>
+        <br>
+        <button id="btn">Get Weather</button>
+        <br>
+        <br>
+        <img id="image" src="" />
+        <div id="output"></div>
+    </div>
+
+    <br>
+    <blockquote>This weather application is making use of OpenWeather API to fetch in real time weather data.
+    </blockquote>
+    <br>
+
+    <dl>
+        <dt>How To Use?</dt>
+        <dd>Enter the name of the city and select the preferred unit to get real-time weather data of the location.</dd>
+        <br>
+        <dt>What are the Limits?</dt>
+        <dd>The web application is running on the free version of OpenWeather API, which is limited to 1000 API calls a
+            day.</dd>
+        <br>
+        <dt>Are there any frameworks used?</dt>
+        <dd>Not at all! The website is built using HTML, CSS & Vanilla Javascript. <em>Not to mention VS Code.</em></dd>
+    </dl>
+
+    <details>
+        <summary>License!</summary>
+        <p>Massachusetts Institute of Technology (MIT) License.</p>
+    </details>
+
+    <br>
+    <br>
+
+    <img src="./assets/images/header.png" class="header_image floating" alt="A Beautiful Weather Illustraion">
+
+    <!-- Adding Script Files -->
+    <script src="./scripts/script.js"></script>
+
+</body>
+
+</html>
